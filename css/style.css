@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+body{
+    background-color: #F3B22B;
+}
+
+.container{
+    width: 70%;
+    margin: 0  auto;
+
+}
+#tabs{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.tab{
+    padding: 20px 34px;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+
+.tab-text{
+    position: relative;
+    margin-top: 100px;
+
+
+}
+.texts{
+    position: absolute;
+    width:500px;
+    left: 20%;
+    height: 300px;
+    background-color: white;
+    padding: 30px;
+
+    border: 2px solid black;
+}
+.text{
+  position:absolute ;
+    width:500px;
+    left: 20%;
+    height: 300px;
+    background-color: white;
+    padding: 30px;
+display: none;
+    border: 2px solid black;
+}
+
+
+
+ .tab::after{
+     position: absolute;
+     content: '';
+     
+     left: -3px;
+     bottom: -20px;
+     width: 0;
+     height: 5px;
+     background-color: black;
+     transition: width  .6s ease;
+     border-radius: 30px;
+ }
+.tab.active::after{
+    width: 104%;
+}
+ .tab-text .text h2 , .tab-text .texts h2{
+   margin-bottom: 30px;
+ }
+ .tab-text .text p , .tab-text .texts p{
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+     .tab-text .text.active{
+            display: block;
+ }
+ /* .tab-text .text.hide{
+     display: none;
+ } */
+
+
+
+
+ .tab-text .text:nth-child(1){
+  
+    z-index: -1;
+}
+.tab-text .text:nth-child(2){
+  
+    z-index: -2;
+}
+.tab-text .text:nth-child(3){
+  
+    z-index: -3;
+}
+.tab-text .text:nth-child(4){
+  
+    z-index: -4;
+}
+.tab-text .text:nth-child(5){
+  
+    z-index: -5;
+}
+.tab-text .text:nth-child(6){
+  
+    z-index: -5;
+    
+}
+
+ .tab-text .texts:nth-child(7){
+    transform: translate(10px, 10px);
+    z-index: -7;
+    
+}
+.tab-text .texts:nth-child(8){
+    transform: translate(20px, 20px);
+    z-index: -8;
+}
+.tab-text .texts:nth-child(9){
+    transform: translate(30px, 30px);
+    z-index: -9;
+}
+.tab-text .texts:nth-child(10){
+    transform: translate(40px, 40px);
+    z-index: -10;
+}
+.tab-text .texts:nth-child(11){
+    transform: translate(50px, 50px);
+    z-index: -11;
+    box-shadow: 0 0 20px 7px black;
+    
+}
+
+
+
+
+
